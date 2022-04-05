@@ -35,7 +35,8 @@ $ git diff HEAD -- git<file>
 	变动的位置用两个@@作为起首和结束
 	@@ -1,2 +1,3 @@：减号表示第一个文件，“1”表示第一行，“2”表示连续两行。同样的，“+1,3”表示变动后，成为第二个文件从第一行开始的连续三行。
 $ git reset HEAD <file>		//暂存区文件撤销动作，该文件为未被追踪状态
-
+$ git diff [file]		//显示暂存区和工作区的差异
+$ git diff --cached [file]或$ git diff --staged [file]		//显示暂存区和上一次提交(commit)的差异
 
 
 
@@ -57,6 +58,7 @@ $ git checkout <flie>	//从版本库中拖出该文件
 $ git add <file>___$ git commit -m '删除文件'	//先删除文件，再进行添加和提交操作，即可在本地版本库中删除该文件,相当于提交一次删除操作的修改
 $ git rm <file>___$ git commit -m '删除文件'	//无法删除子目录
 $ git rm -r <文件夹>___$ git commit -m '删除文件夹'
+
 
 
 
