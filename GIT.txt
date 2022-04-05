@@ -37,7 +37,7 @@ $ git diff HEAD -- git<file>
 $ git reset HEAD <file>		//暂存区文件撤销动作，该文件为未被追踪状态
 $ git diff [file]		//显示暂存区和工作区的差异
 $ git diff --cached [file]或$ git diff --staged [file]		//显示暂存区和上一次提交(commit)的差异
-
+$ git diff [first-branch]...[second-branch]	//显示两次提交之间的差异
 
 
 四、
