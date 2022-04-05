@@ -1,0 +1,71 @@
+一、
+$ git config --global user.name "Your Name"	//创建用户名
+$ git config --global user.email "email@example.com"	//创建用户邮箱
+$ git config --list		//列出git配置信息
+
+
+
+
+二、
+$ git init		//在当前文件夹生成隐藏文件
+$ git add <file>	//添加文件到暂存区
+$ git commit -m '备注说明'	//将已提交暂存区文件提交到本地版本库中
+  若未输入-m： (i)进入编辑模式，(esc)退出编辑模式，(:)进入底盘模式，(wq)保存并且退出
+$ git log		//显示提交日志信息
+$ git status		//查看工作目录与暂存区文件状态
+
+	工作区		暂存区		Git仓库
+	  |		   |		    |
+	  |<------checkout the project------|
+	  |		   |		    |
+	  |		   |		    |
+	  |--stage files-->|		    |
+	  |		   |		    |
+	  |		   |----commit----->|
+	  |		   |		    |
+
+
+
+
+三、
+$ git diff HEAD -- git<file>
+差异比较说明：
+	---：表示变动前的文件
+	+++：表示变动后的文件
+	变动的位置用两个@@作为起首和结束
+	@@ -1,2 +1,3 @@：减号表示第一个文件，“1”表示第一行，“2”表示连续两行。同样的，“+1,3”表示变动后，成为第二个文件从第一行开始的连续三行。
+$ git reset HEAD <file>		//暂存区文件撤销动作，该文件为未被追踪状态
+
+
+
+
+四、
+$ clear		//清屏
+$ git reset --hard HEAD^	//回退上一个版本，回退几个版本加几个箭头^^,或者~n，n为回退版本
+$ git reflog	//全日志
+$ git log --pretty=oneline	//简略日志
+$ git reset --hard （版本代码） //版本时光穿梭，6-7个代码即可
+
+
+
+
+
+五、
+$ git --help	//查看全部git命令
+$ git restore <file>	//恢复被删除的文件
+$ git checkout <flie>	//从版本库中拖出该文件
+$ git add <file>___$ git commit -m '删除文件'	//先删除文件，再进行添加和提交操作，即可在本地版本库中删除该文件,相当于提交一次删除操作的修改
+$ git rm <file>___$ git commit -m '删除文件'	//无法删除子目录
+$ git rm -r <文件夹>___$ git commit -m '删除文件夹'
+
+
+
+
+六、
+$ git
+$ git
+$ git
+$ git
+$ git
+$ git
+$ git
