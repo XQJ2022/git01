@@ -1,0 +1,42 @@
+uint8_t scan_MatrixKey(void)
+{
+    uint8_t column;
+    uint8_t row;
+    uint8_t tmp;
+    uint8_t MatrixKey_value = 20;
+    static uint8_t key_count = 0;
+
+
+    PB -> OUTEN |= 0XFF00;
+
+    PB -> OUT &= 0X00FF;
+    PB -> OUT |= 0XF000;
+
+    PB -> OUTEN &= 0X0FFF;
+    GPIO_PUPD_SEL(PUPD_PU, PB, 12);
+    GPIO_PUPD_SEL(PUPD_PU, PB, 13);
+    GPIO_PUPD_SEL(PUPD_PU, PB, 14);
+    GPIO_PUPD_SEL(PUPD_PU, PB, 15);
+    
+    tmp = PORTE >> 8;
+    
+    if( tmp != 0XF0 )
+    {
+    
+    
+    
+    
+    
+    
+    
+    }
+    
+    
+    
+    
+    
+
+
+
+
+}
